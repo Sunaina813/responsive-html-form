@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <title>Registration Form</title>
+
+    <!----Custom css file-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div id="box">
+        <header>Registration Form</header>
+      </div>
+      <form action="#" class="form">
+        <div class="input-box">
+          <label>Full Name</label><br />
+          <input type="text" placeholder="Enter Full Name" required />
+        </div>
+
+        <div class="input-box">
+          <label>Email Address</label>
+          <input type="text" placeholder="Enter Email Address" required />
+        </div>
+        <div class="column">
+          <div class="input-box">
+            <label>Phone Number</label><br />
+            <input type="number" placeholder="Enter Phone Number" required />
+          </div>
+          <div class="input-box">
+            <label>Birth Date</label><br />
+            <input type="date" placeholder="Enter Birth Date" required />
+          </div>
+        </div>
+        <div class="gender-box">
+          <h3>Gender</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" checked />
+              <label for="check-male">Male</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" checked />
+              <label for="check-female">Female</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-other" name="gender" checked />
+              <label for="check-other">Prefer not to say</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-box-address">
+          <input type="text" placeholder="Enter Street Address" required />
+          <input
+            type="text"
+            placeholder="Enter Street Address line 2"
+            required
+          />
+          <div class="column">
+            <div class="select-box">
+              <select>
+                <option hidden>Country</option>
+                <option>America</option>
+                <option>Australia</option>
+                <option>India</option>
+                <option>Bhutan</option>
+              </select>
+            </div>
+            <div class="column">
+              <input type="text" placeholder="Enter your region" required />
+              <input
+                type="number"
+                placeholder="Enter your Postal Code"
+                required
+              />
+            </div>
+          </div>
+        </div>
+     <button>Submit</button>
+
+      </form>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
